@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Add New Borrower</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<h1>Add new Borrower</h1>
+<div class="formstyle">
+<form action="addBorrower.php" method="get">
+  <fieldset>
+    <legend>Borrower Information:</legend>
+    First Name:<br>
+    <input type="text" name="fname" required><br>
+    Last Name:<br>
+    <input type="text" name="lname" required><br>
+    E-Mail:<br>
+    <input type="email" name="email" required><br>
+    SSN:<br>
+    <input type="text" name="ssn" placeholder="555-55-5555" pattern="\d{3}-?\d{2}-?\d{4}" required><br>
+    Phone:<br>
+    <input type="text" name="phone" placeholder="(555) 555-5555" pattern="\(d{3}) ?\d{3}-?\d{4}" required><br>
+    Address:<br>
+    <input type="text" name="address" required><br>
+    City:<br>
+    <input type="text" name="city" required><br>
+    State:<br>
+    <input type="text" name="state" placeholder="XX" pattern="[A-Z]{2}" required><br>
+    <br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+</div>
+</body>
+</html>
